@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тестовый сайт для Google Analytics</title>
     <link rel="stylesheet" href="styles.css">
-    
+
     <!-- Google Tag Manager -->
     <script>
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -14,6 +15,16 @@
         })(window,document,'script','dataLayer','GTM-XXXXXXX');
     </script>
     <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M5LQV7LB5G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-M5LQV7LB5G');
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -22,13 +33,13 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
-    <h1>test page</h1>
-    <p>Button1</p>
+
+    <h1>Добро пожаловать на тестовый сайт</h1>
+    <p>Нажмите на кнопку ниже, чтобы вызвать пользовательское событие.</p>
     <button id="testButton">Нажми меня!</button>
-    
+
     <p>Или перейдите по <a href="https://example.com" id="testLink">этой ссылке</a>.</p>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
